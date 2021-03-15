@@ -15,6 +15,7 @@ gem 'rack-cors', :require => 'rack/cors'
 #delay jobs
 gem 'delayed_job_active_record', '4.0.3'
 gem "daemons"
+gem 'json', '~> 1.8.3'
 
 #image uploading
 gem 'carrierwave'
