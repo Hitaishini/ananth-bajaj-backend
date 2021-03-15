@@ -231,6 +231,7 @@ DEPENDENCIES
   devise-token_authenticatable
   ffaker
   icalendar
+  json (~> 1.8.3)
   mini_magick
   pg
   prawn
@@ -247,4 +248,4 @@ DEPENDENCIES
   wkhtmltopdf-binary
 
 BUNDLED WITH
-   1.16.1
+   1.17.3

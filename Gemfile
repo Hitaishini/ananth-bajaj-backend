@@ -28,7 +28,6 @@ gem 'capistrano-rpush'
 gem "audited", "~> 4.0"
 gem 'audited-activerecord', '~> 4.2'
 #ical calender
-gem "spring"
 gem 'icalendar'
 gem "mini_magick"
 #pdf
