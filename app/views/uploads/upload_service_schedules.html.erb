@@ -1,0 +1,126 @@
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<style type="text/css">
+		body {
+			font-family: 'Open Sans';
+			left: 0;
+			right: 0;
+			top: -50px;
+			bottom: 0;
+			position: absolute;
+
+		}
+
+		input#pwd, input#confirmPwd {
+			width: 88%;
+			padding: 12px 10px;
+			max-width: 375px!important;
+			border: 1px solid #D0D0D0;
+			border-radius: 0;
+			margin-left: 2%;
+
+		}
+
+
+		input[type="checkbox"] {
+			width: 17px;
+			height: 16px;
+			cursor: pointer;
+			margin-left: 0px;
+			margin-bottom: 0px;
+			vertical-align: bottom;
+		}
+
+		.submit{
+			background-color: #565454;
+			border: none;
+			margin-right:4px;
+			padding: 12px 0px;
+			color: #fff;
+			float: right;
+			width: 147px;
+			font-weight: bold;
+
+		}
+		.label{
+			color: #6D6D6D;
+			margin-left: 18px;
+			font-family: roboto;
+			font-size: 13px;
+		}
+		.container{
+			margin:auto;
+			background-color:#ffffff;
+			box-shadow: 0 0px 1px #E4DADA;
+			max-width: 386px!important;
+			margin-top: 35px;
+			overflow-x: hidden;               
+		}
+		.alert-error{
+			color: red;
+		}
+
+	</style>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="https://s3-ap-southeast-1.amazonaws.com/myridzassets/Dealerships/Anant_Bajaj/Backend_Assets/favicon.ico" type="image/gif" sizes="16x16">
+
+</head>
+<body style="margin:0; background-color:#fff;">
+	<div style="text-align:center;margin: 0 auto;width: 100%;max-width: 600px!important;"><img src="https://s3-ap-southeast-1.amazonaws.com/myridzassets/Dealerships/Anant_Bajaj/Backend_Assets/Anant_bajaj_logo.png" style="max-width: 400px;width: 100%;margin-top: 88px;
+		"></div>
+		<div class="container">
+			<p style="margin-bottom: 5px;color: #6D6D6D; background-color:#565454;height: 37px; width:100%; max-width:386px!important; padding-top: 27px; padding-left: 14px;margin-top: -10px; font-family: 'Roboto', sans-serif;font-size: medium;font-weight: bolder;  ">
+				<strong style="color:#fff;">UPLOAD SERVICE SCHEDULES</strong><br>
+			</p>
+
+			<br><br>
+			<% flash.each do |name, msg| %>
+			<%= content_tag :div, msg, class: "alert-#{name}" %>
+			<% end %>
+			<br>
+<%= form_tag import_service_schedules_uploads_path, multipart: true %>
+	  <%= file_field_tag :file %>
+<%= submit_tag "Import" %>
+
+			<br>
+			<%= link_to "Sample CSV Format", down_load_service_schedule_path(format: "csv"), class: 'css_class' %>
+
+			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script type="text/javascript">
+				function showPassword(e) {
+					document.getElementById('pwd').type = e.checked ? 'text' : 'password';
+					document.getElementById('confirmPwd').type = e.checked ? 'text' : 'password';
+				}
+			</script>
+
+			<script type="text/javascript">
+				function checkPass()
+				{
+					var pwd = document.getElementById('pwd');
+					var confirmPwd = document.getElementById('confirmPwd');
+					var message = document.getElementById('confirmMessage');
+					var goodColor = "#66cc66";
+					var badColor = "#ff6666";
+					if(pwd.value == confirmPwd.value){
+						message.style.color = goodColor;
+						message.innerHTML = "<img src='http://148.251.2.109:3002/item/5/original/tick.png?1450081639' style='width:16px';/>"
+					}else{
+						message.style.color = badColor;
+						message.innerHTML = "<img src='http://148.251.2.109:3002/item/4/original/wrong.png?1450081629' style='width:16px'/>"
+					}
+				}  
+			</script>
+		</body>
+
+
+		
+
+
+
+

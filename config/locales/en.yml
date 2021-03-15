@@ -1,0 +1,111 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  Dealer: 
+    name: "Coromandel Harley - Davidson"
+  Notification:
+    service_booking: "Service booking notification"  
+    service_booking_updated: "Service booking update notification"
+    service_booking_destroyed: "Service booking delete notification"
+    service_scheduled_remainder: "Re-active service reminder notification"
+    test_ride_booking: "Test drive notification"
+    test_ride_updated: "Test drive update notification"
+    test_ride_destroyed: "Test drive delete notification"
+    contact_us: "Contact us notification"
+    welcome: "Welcome notification-user"
+    insurance_renewal: "Insurance renewal notification"
+    insurance_renewal_reminder: "Insurance renewal in-app reminder notification"
+    kms_exceeds: "Service reminder notification based on number of kms"
+    service_scheduled: "Service in-app reminder notification"
+    birthday: "Birthday in-app notification template"
+    accessories: "Wishlist Notification"
+    notification_msg: "Tap here to view details"
+    feedback: "feedback"
+    ride_created: "Create Ride Notification"
+    ride_updated: "Edit Ride Notification"
+    ride_deleted: "Ride Delete Notification"
+    ride_user_response: "Ride Customer Response"
+    event_created: "Create Event Notification"
+    event_updated: "Edit Event Notification"
+    event_deleted: "Event Delete Notification"
+    event_user_response: "Event Customer Response"
+    used_bike_enquiry: "Used bike enquiry notification" 
+    sell_bike_msg: "sell bike notification"
+    payment: 'Payment Invoice'
+    payment_update: 'Invoice update notification'
+    payment_failed: 'Payment Invoice Failure App'
+    payment_success: 'Payment Success inapp'
+    payment_refund_initiat: 'Refund initiated inapp'
+    payment_refund_success: 'Refund success inapp'
+  Email: 
+    service_booking_dealer: "Service confirmation mail-dealer"
+    service_booking_user: "Service confirmation mail-user"
+    service_booking_updated_dealer: "Service confirmation update mail-dealer"
+    service_booking_updated_user: "Service confirmation update mail-user"
+    service_booking_delete_dealer: "Service booking delete mail-dealer"
+    service_booking_delete_user: "Service booking delete mail-user"
+    test_ride_booking_dealer: "Test drive  mail-dealer"
+    test_ride_booking_user: "Test drive mail-user"
+    test_ride_booking_update_dealer: "Test drive update mail-dealer"
+    test_ride_booking_update_user: "Test drive update mail-user"
+    test_ride_booking_delete_dealer: "Test drive delete mail-dealer"
+    test_ride_booking_delete_user: "Test drive delete mail-user"
+    ride_created: "Create Ride Email"
+    ride_updated: "Edit Ride Email"
+    ride_deleted: 'Ride Delete Email'
+    ride_user_response: "Ride Customer Response"
+    event_created: "Create Event Email"
+    event_updated: "Edit Event Email"
+    event_deleted: 'Event Delete Email'
+    event_user_response: "Event Customer Response"
+    used_bike_enquiry_user: "Used bike enquiry mail-user"
+    used_bike_enquiry_dealer: "Used bike enquiry mail-dealer"
+    sell_bike_user_mail: "sell bike mail-user"
+    sell_bike_dealer_mail: "sell bike mail-dealer"
+    payment_dealer: 'Payment Invoice Dealer'
+    payment_user: 'Payment Invoice Email'
+    payment_update: 'Invoice update mail'
+    payment_success_user: 'Payment Invoice Success'
+    payment_success_dealer: ''
+    payment_failed: ''
+    payment_refund_initiat_user: 'Refund initiated user'
+    payment_refund_initiat_dealer: 'Refund initiated dealer'
+    payment_refund_success_user: 'Refund success user'
+    payment_refund_success_dealer: 'Refund success dealer'
+    payment_refund_fail_dealer: ''
+  Errors: 
+    500_error: "Something went wrong on Server side. Please Contatct App provider!"
+  activerecord:
+    attributes:
+      user:
+        email: "E-mail address"
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: "Email Already Exists"
+  General:
+    password_update:
+      successful: "Password Updated successfully!"
+      unsuccessful: "Please enter correct Old Password!"             

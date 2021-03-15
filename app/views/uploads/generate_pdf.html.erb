@@ -1,0 +1,73 @@
+<style type="text/css">
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 0px solid #ddd;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/*/#customers tr:nth-child(even){background-color: #aec9df;}*/*/
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 5px;
+    padding-bottom: 6px;
+    text-align: left;
+    background-color: #01579b;
+    color: white;
+    font-size: 15px;
+}
+
+.colorsd {
+    background: #aec9df!important;
+}
+
+</style>
+
+
+<h3>Anant Bajaj - Price list PDF</h3>
+
+<table id="customers">
+  <tr>
+    <th>Model/Variant</th>
+    <th>Ex-Showroom Price</th>
+    <th>Insurance</th>
+    <th>Registration Charges</th>
+    <th>On Road Price</th>
+  </tr>
+ 
+ <% if @bikes.present? %>
+    <% @bikes.each do |bike| %>
+      <tr class="colorsd">
+         <td>
+           <span><%= bike.name %></span>
+         </td>
+         <td> 
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+         <td>
+         </td>
+       </tr>
+       <% bike.varients.where(visible: true).each do |var| %>
+           <tr>
+                 <td><%= var.varient_name %></td>
+                 <td>&#x20b9; <%= var.pricings.where(price_field_id: 1).last.try(:value) %></td>
+                 <td>&#x20b9; <%= var.pricings.where(price_field_id: 3).last.try(:value) %></td>
+                 <td>&#x20b9; <%= var.pricings.where(price_field_id: 2).last.try(:value) %></td>
+                 <td>&#x20b9; <%= var.pricings.where(price_field_id: 10).last.try(:value) %></td>
+           </tr>
+        <% end %>
+    <% end %>
+ <% end %>
+</table>
+
+
