@@ -34,7 +34,7 @@ module CoromandelHarleyDavidson
         g.javascripts = false
         g.helper = false
       end
-      YAML::ENGINE.yamler = 'syck'
+      # YAML::ENGINE.yamler = 'syck'
 
       config.active_job.queue_adapter = :delayed_job
 
