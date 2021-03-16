@@ -216,6 +216,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.8.0)
   audited (~> 4.0)
   audited-activerecord (~> 4.2)
+  bundler (= 1.17.3)
   capistrano (~> 3.4)
   capistrano-bundler (~> 1.1, >= 1.1.4)
   capistrano-rails (~> 1.1, >= 1.1.6)
