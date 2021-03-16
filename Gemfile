@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.2.10'
+gem 'rails', '4.2.6'
 gem 'rails-api'
 gem 'devise'
 gem 'devise-token_authenticatable'
@@ -15,7 +15,7 @@ gem 'rack-cors', :require => 'rack/cors'
 #delay jobs
 gem 'delayed_job_active_record', '4.0.3'
 gem "daemons"
-gem 'json', '~> 1.8.3'
+
 
 #image uploading
 gem 'carrierwave'
