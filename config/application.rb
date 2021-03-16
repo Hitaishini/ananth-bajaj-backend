@@ -37,7 +37,8 @@ module CoromandelHarleyDavidson
       # YAML::ENGINE.yamler = 'syck'
 
       config.active_job.queue_adapter = :delayed_job
-      config.assets.initialize_on_precompile = false
+      config.assets.initialize_on_precompile = true
+
 
       config.api_only = false
 
