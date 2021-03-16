@@ -34,6 +34,7 @@ gem "mini_magick"
 gem 'prawn'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem 'bundler', '1.17.3'
 group :development do
 	gem 'spring'
 	gem 'pry-rails'
