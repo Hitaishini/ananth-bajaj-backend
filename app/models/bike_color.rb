@@ -1,4 +1,4 @@
-class BikeColor < ActiveRecord::Base
+class BikeColor < ApplicationRecord
 	audited
 	belongs_to :bike
 

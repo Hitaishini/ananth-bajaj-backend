@@ -1,4 +1,4 @@
-class UserRide < ActiveRecord::Base
+class UserRide < ApplicationRecord
 	belongs_to :user
 	belongs_to :ride
 

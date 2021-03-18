@@ -1,4 +1,4 @@
-class AccessoryCategory < ActiveRecord::Base
+class AccessoryCategory < ApplicationRecord
 	audited
 	has_many :tags
 	mount_base64_uploader :image, ImageUploader, file_name: 'accessory_category'

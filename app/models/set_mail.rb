@@ -1,4 +1,4 @@
-class SetMail < ActiveRecord::Base
+class SetMail < ApplicationRecord
 	audited
 
 	def service_created_at

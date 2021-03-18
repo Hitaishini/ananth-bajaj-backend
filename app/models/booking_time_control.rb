@@ -1,4 +1,4 @@
-class BookingTimeControl < ActiveRecord::Base
+class BookingTimeControl < ApplicationRecord
 
 def self.book_time_control_method(params)
     #for Category and Day

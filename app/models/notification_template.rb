@@ -1,4 +1,4 @@
-class NotificationTemplate < ActiveRecord::Base
+class NotificationTemplate < ApplicationRecord
 	has_many :notifications
 	@@dealer = Dealer.all
 

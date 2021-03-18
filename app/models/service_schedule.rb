@@ -1,4 +1,4 @@
-class ServiceSchedule < ActiveRecord::Base
+class ServiceSchedule < ApplicationRecord
 	audited
 	belongs_to :bike
 	#validation

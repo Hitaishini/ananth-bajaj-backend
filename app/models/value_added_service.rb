@@ -1,4 +1,4 @@
-class ValueAddedService < ActiveRecord::Base
+class ValueAddedService < ApplicationRecord
 	#serialize
 	serialize :select_scheme
 

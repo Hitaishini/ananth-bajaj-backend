@@ -1,4 +1,4 @@
-class MyBike < ActiveRecord::Base
+class MyBike < ApplicationRecord
 	belongs_to :user
 	belongs_to :default_bike_image
 	has_many :service_bookings

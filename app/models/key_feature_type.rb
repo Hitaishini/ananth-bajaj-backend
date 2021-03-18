@@ -1,4 +1,4 @@
-class KeyFeatureType < ActiveRecord::Base
+class KeyFeatureType < ApplicationRecord
 	audited
 	has_many :key_features
 

@@ -1,4 +1,4 @@
-class SpecificationType < ActiveRecord::Base
+class SpecificationType < ApplicationRecord
 	audited
 	has_many :specifications
 	has_many :specification_names

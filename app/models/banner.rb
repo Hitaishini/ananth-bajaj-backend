@@ -1,4 +1,4 @@
-class Banner < ActiveRecord::Base
+class Banner < ApplicationRecord
 	audited
   mount_base64_uploader :image, ImageUploader, file_name: 'banner'
   belongs_to :bike

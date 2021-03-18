@@ -1,4 +1,4 @@
-class WebCarGallery < ActiveRecord::Base
+class WebCarGallery < ApplicationRecord
 	belongs_to :car
 	#serializer
 	serialize :image_url

@@ -1,4 +1,4 @@
-class NotificationCategory < ActiveRecord::Base
+class NotificationCategory < ApplicationRecord
 
 	def service_created_at
 		self.created_at.in_time_zone('Chennai').strftime('%d-%m-%y %H:%M')

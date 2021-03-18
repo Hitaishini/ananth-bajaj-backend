@@ -1,4 +1,4 @@
-class AccessoryEnquiry < ActiveRecord::Base
+class AccessoryEnquiry < ApplicationRecord
 	serialize :accessory_id
 
 	def send_notification(user) 

@@ -1,4 +1,4 @@
-class Varient < ActiveRecord::Base
+class Varient < ApplicationRecord
 	audited
 	belongs_to :bike
 	has_many :key_features, :dependent => :destroy

@@ -1,4 +1,4 @@
-class NotificationCount < ActiveRecord::Base
+class NotificationCount < ApplicationRecord
 	belongs_to :user
 
 	def add_notification_count(template)

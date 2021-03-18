@@ -1,4 +1,4 @@
-class ModelFullImage < ActiveRecord::Base
+class ModelFullImage < ApplicationRecord
 	belongs_to :bike
 	
 	#serialize

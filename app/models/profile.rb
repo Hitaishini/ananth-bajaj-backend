@@ -1,4 +1,4 @@
-class Profile < ActiveRecord::Base
+class Profile < ApplicationRecord
 	belongs_to :user
 
 	mount_base64_uploader :profile_image, ImageUploader, file_name: 'profile'

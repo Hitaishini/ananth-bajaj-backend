@@ -1,2 +1,2 @@
-class WhatsappChat < ActiveRecord::Base
+class WhatsappChat < ApplicationRecord
 end

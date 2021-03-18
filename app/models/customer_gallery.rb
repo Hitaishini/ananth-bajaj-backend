@@ -1,4 +1,4 @@
-class CustomerGallery < ActiveRecord::Base
+class CustomerGallery < ApplicationRecord
    audited
    mount_base64_uploader :image, ImageUploader
 

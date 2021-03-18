@@ -1,4 +1,4 @@
-class UsedBikeEnquiry < ActiveRecord::Base
+class UsedBikeEnquiry < ApplicationRecord
 
 	def used_car_enquiry_notification(noti_template, dealer_mail_template, customer_mail_template, params)
 		user = User.find_by_email(self.email)

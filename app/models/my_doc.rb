@@ -1,4 +1,4 @@
-class MyDoc < ActiveRecord::Base
+class MyDoc < ApplicationRecord
 	belongs_to :user
 
 	#mount_base64_uploader :image, ImageUploader, file_name: 'my_doc'

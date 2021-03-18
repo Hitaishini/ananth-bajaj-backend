@@ -1,4 +1,4 @@
-class SetRule < ActiveRecord::Base
+class SetRule < ApplicationRecord
 	audited
 	serialize :days
 

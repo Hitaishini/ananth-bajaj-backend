@@ -1,4 +1,4 @@
-class SpecificationName < ActiveRecord::Base
+class SpecificationName < ApplicationRecord
 	has_many :specifications
 	belongs_to :specification_type
 

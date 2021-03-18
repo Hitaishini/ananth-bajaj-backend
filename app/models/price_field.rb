@@ -1,4 +1,4 @@
-	class PriceField < ActiveRecord::Base
+	class PriceField < ApplicationRecord
 		audited
 		has_many :pricings
 

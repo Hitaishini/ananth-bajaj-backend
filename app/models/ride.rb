@@ -1,4 +1,4 @@
-class Ride < ActiveRecord::Base
+class Ride < ApplicationRecord
 	has_many :users, through: :user_rides
 	has_many :user_rides
 	#serialaizer

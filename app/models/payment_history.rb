@@ -1,3 +1,3 @@
-class PaymentHistory < ActiveRecord::Base
+class PaymentHistory < ApplicationRecord
 	belongs_to :payment
 end

@@ -1,3 +1,3 @@
-class ServiceNumber < ActiveRecord::Base
+class ServiceNumber < ApplicationRecord
 	audited
 end

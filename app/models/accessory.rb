@@ -1,4 +1,4 @@
-class Accessory < ActiveRecord::Base
+class Accessory < ApplicationRecord
 	audited
 	has_many :wishlists, :through => :accessory_wishlist
 	#has_many :tags, through: :accessory_tags

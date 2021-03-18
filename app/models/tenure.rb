@@ -1,4 +1,4 @@
-class Tenure < ActiveRecord::Base
+class Tenure < ApplicationRecord
 	audited
 
 	def service_created_at

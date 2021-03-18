@@ -1,2 +1,2 @@
-class EmailPriceList < ActiveRecord::Base
+class EmailPriceList < ApplicationRecord
 end

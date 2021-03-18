@@ -1,4 +1,4 @@
-class InsuranceRenewal < ActiveRecord::Base
+class InsuranceRenewal < ApplicationRecord
 	audited
   belongs_to :my_bike
 

@@ -1,4 +1,4 @@
-class Testmonial < ActiveRecord::Base
+class Testmonial < ApplicationRecord
 	mount_base64_uploader :image, TestmonialUploader
 
 	def service_created_at

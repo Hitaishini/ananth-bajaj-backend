@@ -1,2 +1,2 @@
-class SocialMediaLink < ActiveRecord::Base
+class SocialMediaLink < ApplicationRecord
 end

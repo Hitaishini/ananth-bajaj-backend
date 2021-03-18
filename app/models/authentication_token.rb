@@ -1,3 +1,3 @@
-class AuthenticationToken < ActiveRecord::Base
+class AuthenticationToken < ApplicationRecord
 	belongs_to :user
 end

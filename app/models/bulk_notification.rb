@@ -1,4 +1,4 @@
-class BulkNotification < ActiveRecord::Base
+class BulkNotification < ApplicationRecord
     has_many :notifications
 	mount_base64_uploader :image, ImageUploader, file_name: 'notification'
 

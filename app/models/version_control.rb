@@ -1,4 +1,4 @@
-class VersionControl < ActiveRecord::Base
+class VersionControl < ApplicationRecord
 	belongs_to :user
 
 	 def user_email

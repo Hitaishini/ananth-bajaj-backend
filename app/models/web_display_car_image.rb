@@ -1,4 +1,4 @@
-class WebDisplayCarImage < ActiveRecord::Base
+class WebDisplayCarImage < ApplicationRecord
 	belongs_to :car
 
 

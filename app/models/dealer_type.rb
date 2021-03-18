@@ -1,4 +1,4 @@
-class DealerType < ActiveRecord::Base
+class DealerType < ApplicationRecord
 	audited
 	has_and_belongs_to_many :dealers
 

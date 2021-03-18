@@ -1,4 +1,4 @@
-class AccessoryWishlist < ActiveRecord::Base
+class AccessoryWishlist < ApplicationRecord
 	belongs_to :wishlist
 	belongs_to :accessory
 

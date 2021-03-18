@@ -1,4 +1,4 @@
-class ContactNumber < ActiveRecord::Base
+class ContactNumber < ApplicationRecord
 	audited
 	belongs_to :contact_type
 

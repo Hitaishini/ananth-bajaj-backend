@@ -1,4 +1,4 @@
-class Enquiry < ActiveRecord::Base
+class Enquiry < ApplicationRecord
 
 
 	def service_created_at

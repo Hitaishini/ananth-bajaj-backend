@@ -1,4 +1,4 @@
-class BookingSlotControl < ActiveRecord::Base
+class BookingSlotControl < ApplicationRecord
 
 
 	def self.slot_count(params)

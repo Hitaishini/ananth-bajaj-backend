@@ -1,4 +1,4 @@
-class UsedBike < ActiveRecord::Base
+class UsedBike < ApplicationRecord
 	belongs_to :used_bike_model
 	belongs_to :user
 	belongs_to :dealer

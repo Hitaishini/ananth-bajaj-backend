@@ -1,13 +1,13 @@
 Rpush.configure do |config|
 
-  # Supported clients are :active_record, :redis and :mongoid
+  # Supported clients are :active_record and :redis
   config.client = :active_record
 
   # Options passed to Redis.new
   # config.redis_options = {}
 
   # Frequency in seconds to check for new notifications.
-  config.push_poll = 30
+  config.push_poll = 2
 
   # The maximum number of notifications to load from the store every `push_poll` seconds.
   # If some notifications are still enqueued internally, Rpush will load the batch_size less
@@ -26,6 +26,10 @@ Rpush.configure do |config|
   # Define a custom logger.
   # config.logger = MyLogger.new
 
+  # By default in foreground mode logs are directed both to the logger and to stdout.
+  # If the logger goes to stdout, you can disable foreground logging to avoid duplication.
+  # config.foreground_logging = false
+
   # config.apns.feedback_receiver.enabled = true
   # config.apns.feedback_receiver.frequency = 60
 
@@ -36,8 +40,8 @@ Rpush.reflect do |on|
   # Called with a Rpush::Apns::Feedback instance when feedback is received
   # from the APNs that a notification has failed to be delivered.
   # Further notifications should not be sent to the device.
-  on.apns_feedback do |feedback|
-  end
+  # on.apns_feedback do |feedback|
+  # end
 
   # Called when a notification is queued internally for delivery.
   # The internal queue for each app runner can be inspected:
@@ -51,15 +55,13 @@ Rpush.reflect do |on|
   # end
 
   # Called when a notification is successfully delivered.
-  # 
-  on.notification_delivered do |notification|
-
-  end
+  # on.notification_delivered do |notification|
+  # end
 
   # Called when notification delivery failed.
   # Call 'error_code' and 'error_description' on the notification for the cause.
-  on.notification_failed do |notification|
-  end
+  # on.notification_failed do |notification|
+  # end
 
   # Called when the notification delivery failed and only the notification ID
   # is present in memory.

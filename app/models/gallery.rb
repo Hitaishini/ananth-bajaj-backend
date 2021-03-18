@@ -1,4 +1,4 @@
-class Gallery < ActiveRecord::Base
+class Gallery < ApplicationRecord
 	audited
 	serialize :image
 	belongs_to :bike

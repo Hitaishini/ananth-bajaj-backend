@@ -1,4 +1,4 @@
-class WebCarColor < ActiveRecord::Base
+class WebCarColor < ApplicationRecord
 	belongs_to :car
 	#serializer
 	serialize :color_name

@@ -1,4 +1,4 @@
-class Tag < ActiveRecord::Base
+class Tag < ApplicationRecord
 	has_many :accessories, through: :accessory_tags
 	has_many :accessory_tags
 	belongs_to :accessory_category

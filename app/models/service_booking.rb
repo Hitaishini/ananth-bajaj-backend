@@ -1,4 +1,4 @@
-class ServiceBooking < ActiveRecord::Base
+class ServiceBooking < ApplicationRecord
 	audited
 	belongs_to :my_bike
 	belongs_to :user

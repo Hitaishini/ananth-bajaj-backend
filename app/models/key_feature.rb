@@ -1,4 +1,4 @@
-class KeyFeature < ActiveRecord::Base
+class KeyFeature < ApplicationRecord
 	audited
 	belongs_to :bike
 	belongs_to :key_feature_type

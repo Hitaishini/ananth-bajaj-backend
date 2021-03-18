@@ -1,4 +1,4 @@
-class VehicleFaq < ActiveRecord::Base
+class VehicleFaq < ApplicationRecord
 
 	belongs_to :bike
 

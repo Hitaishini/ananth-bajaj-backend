@@ -1,2 +1,2 @@
-class SetBookingNumber < ActiveRecord::Base
+class SetBookingNumber < ApplicationRecord
 end

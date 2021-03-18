@@ -1,4 +1,4 @@
-class WebBanner < ActiveRecord::Base
+class WebBanner < ApplicationRecord
 	audited
 	mount_base64_uploader :image, WebBannerUploader
 	belongs_to :bike

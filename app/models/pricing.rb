@@ -1,4 +1,4 @@
-class Pricing < ActiveRecord::Base
+class Pricing < ApplicationRecord
 	audited
 	belongs_to :bike
 	belongs_to :price_field

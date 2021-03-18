@@ -1,4 +1,4 @@
-class DealerContactLabel < ActiveRecord::Base
+class DealerContactLabel < ApplicationRecord
 	audited
 	has_many :dealer_contact_numbers
 

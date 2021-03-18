@@ -3,7 +3,7 @@ require 'openssl'
 require "net/https"
 require "uri"
 
-class Payment < ActiveRecord::Base
+class Payment < ApplicationRecord
 	belongs_to :entity, polymorphic: true
 	belongs_to :user
 	belongs_to :merchant

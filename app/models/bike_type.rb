@@ -1,4 +1,4 @@
-class BikeType < ActiveRecord::Base
+class BikeType < ApplicationRecord
 	audited
   has_many :bikes
 

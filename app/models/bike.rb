@@ -1,4 +1,4 @@
-class Bike < ActiveRecord::Base
+class Bike < ApplicationRecord
 	audited
 	belongs_to :bike_type
 	has_one :default_bike_image, :dependent => :destroy

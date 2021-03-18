@@ -1,2 +1,2 @@
-class BookingSlot < ActiveRecord::Base
+class BookingSlot < ApplicationRecord
 end

@@ -1,4 +1,4 @@
-class Merchant < ActiveRecord::Base
+class Merchant < ApplicationRecord
 	has_many :payments
 	#serialization
 	serialize :payment_for

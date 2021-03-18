@@ -1,4 +1,4 @@
-class TestRide < ActiveRecord::Base
+class TestRide < ApplicationRecord
 	audited
 	belongs_to :user
 
