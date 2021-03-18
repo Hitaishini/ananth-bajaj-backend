@@ -1,4 +1,4 @@
-class CreateServiceHistories < ActiveRecord::Migration
+class CreateServiceHistories < ActiveRecord::Migration[5.1]
   def change
     create_table :service_histories do |t|
       t.date :service_date

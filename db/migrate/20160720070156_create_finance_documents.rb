@@ -1,4 +1,4 @@
-class CreateFinanceDocuments < ActiveRecord::Migration
+class CreateFinanceDocuments < ActiveRecord::Migration[5.1]
   def change
     create_table :finance_documents do |t|
       t.string :category

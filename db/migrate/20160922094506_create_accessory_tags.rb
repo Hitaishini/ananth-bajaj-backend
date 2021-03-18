@@ -1,4 +1,4 @@
-class CreateAccessoryTags < ActiveRecord::Migration
+class CreateAccessoryTags < ActiveRecord::Migration[5.1]
   def change
     create_table :accessory_tags do |t|
       t.integer :accessory_id

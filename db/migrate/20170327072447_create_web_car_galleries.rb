@@ -1,4 +1,4 @@
-class CreateWebCarGalleries < ActiveRecord::Migration
+class CreateWebCarGalleries < ActiveRecord::Migration[5.1]
   def change
     create_table :web_car_galleries do |t|
       t.integer :car_id

@@ -1,4 +1,4 @@
-class CreateRides < ActiveRecord::Migration
+class CreateRides < ActiveRecord::Migration[5.1]
   def change
     create_table :rides do |t|
       t.date :ride_date

@@ -1,4 +1,4 @@
-class AddNewFieldsToRides < ActiveRecord::Migration
+class AddNewFieldsToRides < ActiveRecord::Migration[5.1]
   def change
   	remove_column :rides, :assembly_time
   	remove_column :rides, :destination_time

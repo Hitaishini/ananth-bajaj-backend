@@ -1,4 +1,4 @@
-class CreatePriceFields < ActiveRecord::Migration
+class CreatePriceFields < ActiveRecord::Migration[5.1]
   def change
     create_table :price_fields do |t|
       t.string :name

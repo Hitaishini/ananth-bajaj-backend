@@ -1,4 +1,4 @@
-class CreateServiceBookings < ActiveRecord::Migration
+class CreateServiceBookings < ActiveRecord::Migration[5.1]
   def change
     create_table :service_bookings do |t|
       t.integer :user_id

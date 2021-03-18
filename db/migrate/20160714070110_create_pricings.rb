@@ -1,4 +1,4 @@
-class CreatePricings < ActiveRecord::Migration
+class CreatePricings < ActiveRecord::Migration[5.1]
   def change
     create_table :pricings do |t|
       t.integer :price_field_id

@@ -1,4 +1,4 @@
-class AddColumnsToUpdateModels < ActiveRecord::Migration
+class AddColumnsToUpdateModels < ActiveRecord::Migration[5.1]
   def change
   	add_column :finance_documents, :family, :string
   	remove_column :user_rides, :user_ride_date

@@ -1,4 +1,4 @@
-class CreateTenures < ActiveRecord::Migration
+class CreateTenures < ActiveRecord::Migration[5.1]
   def change
     create_table :tenures do |t|
       t.string :month

@@ -1,4 +1,4 @@
-class CreateAccessoryEnquiries < ActiveRecord::Migration
+class CreateAccessoryEnquiries < ActiveRecord::Migration[5.1]
   def change
     create_table :accessory_enquiries do |t|
       t.integer :user_id

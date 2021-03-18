@@ -1,4 +1,4 @@
-class CreateWhatsappChats < ActiveRecord::Migration
+class CreateWhatsappChats < ActiveRecord::Migration[5.1]
   def change
     create_table :whatsapp_chats do |t|
       t.string :contact_number

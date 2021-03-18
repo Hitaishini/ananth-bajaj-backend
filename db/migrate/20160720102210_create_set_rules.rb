@@ -1,4 +1,4 @@
-class CreateSetRules < ActiveRecord::Migration
+class CreateSetRules < ActiveRecord::Migration[5.1]
   def change
     create_table :set_rules do |t|
       t.integer :days

@@ -1,4 +1,4 @@
-class CreateEmailPriceLists < ActiveRecord::Migration
+class CreateEmailPriceLists < ActiveRecord::Migration[5.1]
   def change
     create_table :email_price_lists do |t|
       t.string :name

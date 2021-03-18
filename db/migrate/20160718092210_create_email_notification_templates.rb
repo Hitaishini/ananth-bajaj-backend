@@ -1,4 +1,4 @@
-class CreateEmailNotificationTemplates < ActiveRecord::Migration
+class CreateEmailNotificationTemplates < ActiveRecord::Migration[5.1]
   def change
     create_table :email_notification_templates do |t|
       t.text :content

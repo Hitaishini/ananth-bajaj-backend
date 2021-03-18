@@ -1,4 +1,4 @@
-class AddSocialLoginFieldToUsers < ActiveRecord::Migration
+class AddSocialLoginFieldToUsers < ActiveRecord::Migration[5.1]
   def change
   	add_column :users, :social_login, :boolean, default: false
   end

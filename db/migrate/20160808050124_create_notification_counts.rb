@@ -1,4 +1,4 @@
-class CreateNotificationCounts < ActiveRecord::Migration
+class CreateNotificationCounts < ActiveRecord::Migration[5.1]
   def change
     create_table :notification_counts do |t|
       t.integer :user_id

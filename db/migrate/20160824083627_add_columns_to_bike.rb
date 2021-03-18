@@ -1,4 +1,4 @@
-class AddColumnsToBike < ActiveRecord::Migration
+class AddColumnsToBike < ActiveRecord::Migration[5.1]
   def change
   	add_column :bikes, :brand, :string
   	add_column :dealers, :mobile, :string

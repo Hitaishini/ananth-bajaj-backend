@@ -1,4 +1,4 @@
-class AddFiledToProfiles < ActiveRecord::Migration
+class AddFiledToProfiles < ActiveRecord::Migration[5.1]
   def change
 		add_column :profiles, :notifiable_offers, :boolean, default: true
 	  	add_column :profiles, :notifiable_events, :boolean, default: true

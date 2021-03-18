@@ -1,4 +1,4 @@
-class CreateBikeTypes < ActiveRecord::Migration
+class CreateBikeTypes < ActiveRecord::Migration[5.1]
   def change
     create_table :bike_types do |t|
       t.string :name

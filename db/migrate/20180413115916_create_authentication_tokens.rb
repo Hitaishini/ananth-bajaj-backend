@@ -1,4 +1,4 @@
-class CreateAuthenticationTokens < ActiveRecord::Migration
+class CreateAuthenticationTokens < ActiveRecord::Migration[5.1]
   def change
     create_table :authentication_tokens do |t|
       t.string :body

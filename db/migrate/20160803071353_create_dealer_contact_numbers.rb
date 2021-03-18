@@ -1,4 +1,4 @@
-class CreateDealerContactNumbers < ActiveRecord::Migration
+class CreateDealerContactNumbers < ActiveRecord::Migration[5.1]
   def change
     create_table :dealer_contact_numbers do |t|
       t.string :number

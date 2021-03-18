@@ -1,4 +1,4 @@
-class RemoveIndexOnUsers < ActiveRecord::Migration
+class RemoveIndexOnUsers < ActiveRecord::Migration[5.1]
   def change
   	remove_index :users, column: :email, unique: true
   end

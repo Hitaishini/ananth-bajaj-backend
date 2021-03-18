@@ -1,4 +1,4 @@
-class CreateInsuranceRenewals < ActiveRecord::Migration
+class CreateInsuranceRenewals < ActiveRecord::Migration[5.1]
   def change
     create_table :insurance_renewals do |t|
       t.string :name

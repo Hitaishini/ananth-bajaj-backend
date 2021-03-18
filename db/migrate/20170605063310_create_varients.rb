@@ -1,4 +1,4 @@
-class CreateVarients < ActiveRecord::Migration
+class CreateVarients < ActiveRecord::Migration[5.1]
   def change
     create_table :varients do |t|
       t.string :varient_name

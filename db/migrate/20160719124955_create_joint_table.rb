@@ -1,4 +1,4 @@
-class CreateJointTable < ActiveRecord::Migration
+class CreateJointTable < ActiveRecord::Migration[5.1]
   def change
     create_table :dealer_types_dealers do |t|
       t.integer :dealer_id

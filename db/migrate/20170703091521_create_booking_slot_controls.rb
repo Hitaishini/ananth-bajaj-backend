@@ -1,4 +1,4 @@
-class CreateBookingSlotControls < ActiveRecord::Migration
+class CreateBookingSlotControls < ActiveRecord::Migration[5.1]
   def change
     create_table :booking_slot_controls do |t|
       t.string :dealer_location

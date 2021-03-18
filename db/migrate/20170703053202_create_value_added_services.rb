@@ -1,4 +1,4 @@
-class CreateValueAddedServices < ActiveRecord::Migration
+class CreateValueAddedServices < ActiveRecord::Migration[5.1]
   def change
     create_table :value_added_services do |t|
       t.string :name

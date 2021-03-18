@@ -1,4 +1,4 @@
-class ChangeColumnNameToNotificationCount < ActiveRecord::Migration
+class ChangeColumnNameToNotificationCount < ActiveRecord::Migration[5.1]
   def change
 
   	rename_column :notification_counts, :test_drive_count, :bookings

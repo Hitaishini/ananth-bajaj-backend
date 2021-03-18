@@ -1,4 +1,4 @@
-class CreateServiceSchedules < ActiveRecord::Migration
+class CreateServiceSchedules < ActiveRecord::Migration[5.1]
   def change
     create_table :service_schedules do |t|
       t.string :service_number

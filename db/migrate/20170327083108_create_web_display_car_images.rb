@@ -1,4 +1,4 @@
-class CreateWebDisplayCarImages < ActiveRecord::Migration
+class CreateWebDisplayCarImages < ActiveRecord::Migration[5.1]
   def change
     create_table :web_display_car_images do |t|
       t.string :image_url

@@ -1,4 +1,4 @@
-class AddMoreFieldsToWebBanners < ActiveRecord::Migration
+class AddMoreFieldsToWebBanners < ActiveRecord::Migration[5.1]
   def change
   	add_column :web_banners, :button_text, :string
   	rename_column :web_banners, :redirect_to, :button_link_url

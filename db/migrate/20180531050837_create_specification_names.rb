@@ -1,4 +1,4 @@
-class CreateSpecificationNames < ActiveRecord::Migration
+class CreateSpecificationNames < ActiveRecord::Migration[5.1]
   def change
     create_table :specification_names do |t|
       t.string :name

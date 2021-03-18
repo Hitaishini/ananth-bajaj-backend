@@ -1,4 +1,4 @@
-class CreateWebBannner < ActiveRecord::Migration
+class CreateWebBannner < ActiveRecord::Migration[5.1]
   def change
       create_table :web_banners do |t|
       t.string :image

@@ -1,4 +1,4 @@
-class CreateUsedBikes < ActiveRecord::Migration
+class CreateUsedBikes < ActiveRecord::Migration[5.1]
   def change
     create_table :used_bikes do |t|
       t.string :make_coompany

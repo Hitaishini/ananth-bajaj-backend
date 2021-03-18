@@ -1,4 +1,4 @@
-class CreateBulkNotifications < ActiveRecord::Migration
+class CreateBulkNotifications < ActiveRecord::Migration[5.1]
   def change
     create_table :bulk_notifications do |t|
       t.text :content

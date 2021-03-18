@@ -1,4 +1,4 @@
-class CreateKeyFeatures < ActiveRecord::Migration
+class CreateKeyFeatures < ActiveRecord::Migration[5.1]
   def change
     create_table :key_features do |t|
       t.string :title

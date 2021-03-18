@@ -1,4 +1,4 @@
-class ChangeColumnDatatypeAccessories < ActiveRecord::Migration
+class ChangeColumnDatatypeAccessories < ActiveRecord::Migration[5.1]
   def change
   	change_column :accessories, :size, :string
   end

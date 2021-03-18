@@ -1,4 +1,4 @@
-class AddSomeFieldChangesBikes < ActiveRecord::Migration
+class AddSomeFieldChangesBikes < ActiveRecord::Migration[5.1]
   def change
     remove_column :bikes, :start_price
     remove_column :bikes, :bike_cc

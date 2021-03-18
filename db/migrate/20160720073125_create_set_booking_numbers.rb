@@ -1,4 +1,4 @@
-class CreateSetBookingNumbers < ActiveRecord::Migration
+class CreateSetBookingNumbers < ActiveRecord::Migration[5.1]
   def change
     create_table :set_booking_numbers do |t|
       t.string :booking_number

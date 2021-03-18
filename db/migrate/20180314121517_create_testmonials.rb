@@ -1,4 +1,4 @@
-class CreateTestmonials < ActiveRecord::Migration
+class CreateTestmonials < ActiveRecord::Migration[5.1]
   def change
     create_table :testmonials do |t|
       t.string :name

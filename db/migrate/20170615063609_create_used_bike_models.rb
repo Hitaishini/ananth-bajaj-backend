@@ -1,4 +1,4 @@
-class CreateUsedBikeModels < ActiveRecord::Migration
+class CreateUsedBikeModels < ActiveRecord::Migration[5.1]
   def change
     create_table :used_bike_models do |t|
       t.string :name

@@ -1,4 +1,4 @@
-class CreateBookingTimeControls < ActiveRecord::Migration
+class CreateBookingTimeControls < ActiveRecord::Migration[5.1]
   def change
     create_table :booking_time_controls do |t|
       t.time :open_time

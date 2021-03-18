@@ -1,4 +1,4 @@
-class CreateVehicleFaqs < ActiveRecord::Migration
+class CreateVehicleFaqs < ActiveRecord::Migration[5.1]
   def change
     create_table :vehicle_faqs do |t|
     	t.string :bike_type

@@ -1,4 +1,4 @@
-class UpdateRideAndEvents < ActiveRecord::Migration
+class UpdateRideAndEvents < ActiveRecord::Migration[5.1]
   def change
   	add_column :rides, :coordinator_name, :string, default: 'N/A'
   	add_column :events, :coordinator_name, :string, default: 'N/A'
