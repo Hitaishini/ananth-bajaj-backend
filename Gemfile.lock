@@ -412,7 +412,6 @@ DEPENDENCIES
   sass-rails
   sinatra
   spring
-  sprockets
   tiddle
   whenever
   wicked_pdf

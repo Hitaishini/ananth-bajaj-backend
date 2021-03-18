@@ -62,5 +62,5 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'sass-rails'
 gem 'sinatra', require: false
-gem 'sprockets'
+# gem 'sprockets'
 
