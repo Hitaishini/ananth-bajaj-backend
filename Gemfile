@@ -5,7 +5,6 @@ ruby '2.4.6'
 gem 'pg'
 gem 'puma'
 gem 'rails'
-
 # gem 'rails-api'
 gem 'devise'
 gem 'devise-token_authenticatable'
