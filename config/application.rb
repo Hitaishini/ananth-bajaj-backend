@@ -28,7 +28,7 @@ module CoromandelHarleyDavidson
         g.helper = false
       end
       config.active_job.queue_adapter = :delayed_job
-      config.assets.initialize_on_precompile = true
+      config.assets.initialize_on_precompile = false
 
       config.api_only = false
     config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/uploaders)
