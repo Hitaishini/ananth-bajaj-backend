@@ -34,11 +34,11 @@ module CoromandelHarleyDavidson
     config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/uploaders)
     # config.active_record.raise_in_transactional_callbacks = true
 
-    config.middleware.insert_before 0, "Rack::Cors" do
-        allow do
-            origins '*'
-            resource '*', :headers => :any, :methods => [:get, :post, :delete, :put, :options]
-        end
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :delete, :put, :options]
+      end
     end
 
     config.action_dispatch.default_headers.merge!({
