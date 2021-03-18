@@ -32,7 +32,7 @@ module CoromandelHarleyDavidson
 
       config.api_only = false
     config.autoload_paths += %W(#{config.root}/lib #{config.root}/app/uploaders)
-    config.active_record.raise_in_transactional_callbacks = true
+    # config.active_record.raise_in_transactional_callbacks = true
 
     config.middleware.insert_before 0, "Rack::Cors" do
         allow do
