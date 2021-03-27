@@ -48,7 +48,8 @@ group :development do
   gem 'capistrano-rails-console'
 end
 
-gem 'actionpack-action_caching'
+# gem 'actionpack-action_caching'
+gem 'actionpack-action_caching', '~> 1.1', '>= 1.1.1'
 gem 'active_hash'
 gem 'bootstrap-sass'
 gem 'coffee-rails'

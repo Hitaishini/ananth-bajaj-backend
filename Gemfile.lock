@@ -372,7 +372,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  actionpack-action_caching
+  actionpack-action_caching (~> 1.1, >= 1.1.1)
   active_hash
   active_model_serializers (~> 0.8.0)
   audited (~> 4.9)
